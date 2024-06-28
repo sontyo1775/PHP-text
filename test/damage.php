@@ -14,16 +14,17 @@ class Damage {
         $this->buki = $buki;
     }
 
-    // trueかfalseで判断して表記するメソッド
+    // trueかfalseで判断して攻撃受けた表記するメソッド
     public function attackDamageReturn()
     {
         // trueが返ってきた場合
         if ($this->buki->attackDamage() == true ) {
-            return '攻撃されました。';
+            return '攻撃されました。<br>';
         // falseが返ってきた場合
         } else {
-            return '攻撃できません。';
+            return '攻撃受けませんでした。<br>';
         }
     }
+    // 武器の攻撃受けてどうなったか
 }
     
